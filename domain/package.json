@@ -1,0 +1,12 @@
+{
+  "name": "@skeleton/domain",
+  "version": "1.0.0",
+  "description": "Domain: Isolated module that contains the business logic.",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "lionel gt",
+  "license": "ISC"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "nodejs-hexagonal-ddd-skeleton",
+  "version": "1.0.0",
+  "description": "Node.js Hexagonal Architecture + DDD:Repository template for your Node.js backend projects, designed for microservices",
+  "author": "Lionel gt",
+  "main": "",
+  "type": "module",
+  "scripts": {},
+  "keywords": [
+    "Node.js",
+    "nodejs",
+    "Hexagonal Architecture",
+    "DDD",
+    "Skeleton",
+    "Template",
+    "NestJs",
+    "TypeScript"
+  ],
+  "license": "ISC",
+  "workspaces": [
+    "domain",
+    "infrastructure/entry-points/rest-api",
+    "infrastructure/driven-adapters/http-client",
+    "application"
+  ],
+  "devDependencies": {
+    "@nestjs/cli": "^10.3.2"
+  }
+}

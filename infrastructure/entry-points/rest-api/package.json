@@ -1,0 +1,15 @@
+{
+  "name": "@skeleton/rest-api",
+  "version": "1.0.0",
+  "description": "Rest-api: Infrastructure module where we define our REST APIs",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Lionel gt",
+  "license": "ISC",
+  "dependencies": {
+    "@skeleton/domain": "^1.0.0"
+  }
+}
