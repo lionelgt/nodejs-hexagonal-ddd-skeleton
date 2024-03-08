@@ -24,6 +24,8 @@
     "@nestjs/core": "^10.0.0",
     "@nestjs/platform-express": "^10.0.0",
     "@skeleton/http-client": "^1.0.0",
+    "@skeleton/kafka-listener": "^1.0.0",
+    "@skeleton/mongoose-repository": "^1.0.0",
     "@skeleton/rest-api": "^1.0.0",
     "reflect-metadata": "^0.2.0",
     "rxjs": "^7.8.1"

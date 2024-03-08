@@ -20,7 +20,9 @@
   "workspaces": [
     "domain",
     "infrastructure/entry-points/rest-api",
+    "infrastructure/entry-points/kafka-listener",
     "infrastructure/driven-adapters/http-client",
+    "infrastructure/driven-adapters/mongoose-repository",
     "application"
   ],
   "devDependencies": {

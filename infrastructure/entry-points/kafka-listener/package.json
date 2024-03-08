@@ -1,0 +1,15 @@
+{
+  "name": "@skeleton/kafka-listener",
+  "version": "1.0.0",
+  "description": "Kafka-listener: Infrastructure module where we define our consumers that subscribes to (reads and processes) events.",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Lionel gt",
+  "license": "ISC",
+  "dependencies": {
+    "@skeleton/domain": "^1.0.0"
+  }
+}

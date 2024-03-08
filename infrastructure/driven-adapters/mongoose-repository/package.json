@@ -1,0 +1,15 @@
+{
+  "name": "@skeleton/mongoose-repository",
+  "version": "1.0.0",
+  "description": "Mongoose-repository: Infrastructure module where we model our application data",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@skeleton/domain": "^1.0.0"
+  }
+}
