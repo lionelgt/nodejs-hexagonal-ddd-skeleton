@@ -4,7 +4,8 @@
   "description": "Kafka-listener: Infrastructure module where we define our consumers that subscribes to (reads and processes) events.",
   "main": "./dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc"
   },
   "keywords": [],
   "author": "Lionel gt",

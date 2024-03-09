@@ -4,7 +4,8 @@
   "description": "Mongoose-repository: Infrastructure module where we model our application data",
   "main": "./dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc"
   },
   "keywords": [],
   "author": "",

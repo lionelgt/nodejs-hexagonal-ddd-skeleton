@@ -1,11 +1,12 @@
 {
-  "name": "@skeleton/applicatioon",
+  "name": "@skeleton/application",
   "version": "0.0.1",
   "description": "Application: A module that integrates domain and infrastructure components to serve as a Node.js microservice solution.",
   "author": "Lionel gt",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
+    "clean": "rm -rf dist",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",

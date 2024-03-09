@@ -213,3 +213,27 @@ $ npm install @skeleton/mongoose-repository --workspace=application
   }
 }
 ```
+
+## ♻ Build Cycle Configuration
+* Add typescript dependency `$ npm install typescript -D`
+* Copy base [tsconfig.json](https://github.com/lionelgt/nodejs-hexagonal-ddd-skeleton/blob/main/tsconfig.json)
+* Use Nx to manage build system: `npx nx init`. Check the generated [nx.json](https://github.com/lionelgt/nodejs-hexagonal-ddd-skeleton/blob/main/nx.json)
+* Define script of clean and build on each workspaces.
+  ```json
+    {
+        "scripts": {
+            "clean": "rm -rf dist",
+            "build": "npm run clean && tsc"
+        }
+    }
+  ```
+* Define script of clean, build and start in root project
+  ```json
+    {
+        "scripts": {
+            "clean": "nx run-many -t clean",
+            "build": "nx run-many -t build",
+            "start": "nx run @skeleton/application:start"
+        }
+    }
+  ```
