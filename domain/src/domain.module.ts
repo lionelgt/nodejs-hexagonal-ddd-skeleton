@@ -6,3 +6,5 @@ import { GitRepoUseCaseImpl } from './use-case/git-repo.use-case-impl';
   exports: ['gitRepoUseCase'],
 })
 export class DomainModule {}
+
+export const DOMAIN_MODULE_NAME = DomainModule.name;
