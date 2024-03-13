@@ -9,6 +9,7 @@
     "clean": "nx run-many -t clean",
     "build": "nx run-many -t build",
     "start": "nx run @skeleton/application:start",
+    "start:prod": "npm run  start:prod -w application",
     "lint": "eslint \"{application/src,application/test,domain/src,domain/test,infrastructure/**/src,infrastructure/**/test}/**/*.ts\" --fix"
   },
   "keywords": [

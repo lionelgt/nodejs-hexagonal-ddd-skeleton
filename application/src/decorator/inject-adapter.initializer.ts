@@ -1,6 +1,6 @@
 import { Injectable, OnModuleInit } from '@nestjs/common';
 import { ModuleRef, ModulesContainer } from '@nestjs/core';
-import { DECORATOR_INJECT_ADAPTER, DOMAIN_MODULE_NAME } from '@skeleton/Domain';
+import { DECORATOR_INJECT_ADAPTER, DOMAIN_MODULE_NAME } from '@skeleton/domain';
 
 @Injectable()
 export class DomainInjectAdapterInitializer implements OnModuleInit {
