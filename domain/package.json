@@ -9,5 +9,8 @@
   },
   "keywords": [],
   "author": "Lionel gt",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@nestjs/common": "^10.3.3"
+  }
 }

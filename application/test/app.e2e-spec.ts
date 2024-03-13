@@ -1,24 +1,31 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { INestApplication } from '@nestjs/common';
 import * as request from 'supertest';
-import { AppModule } from './../src/app.module';
+import { ApplicationModule } from '../src/application.module';
 
 describe('AppController (e2e)', () => {
   let app: INestApplication;
 
   beforeEach(async () => {
     const moduleFixture: TestingModule = await Test.createTestingModule({
-      imports: [AppModule],
+      imports: [ApplicationModule],
     }).compile();
 
     app = moduleFixture.createNestApplication();
     await app.init();
   });
 
-  it('/ (GET)', () => {
+  it('/api/git-repository (GET)', () => {
     return request(app.getHttpServer())
-      .get('/')
+      .get('/api/git-repository')
       .expect(200)
-      .expect('Hello World!');
+      .expect({
+        name: 'nodejs-hexagonal-ddd-skeleton',
+        full_name: 'lionelgt/nodejs-hexagonal-ddd-skeleton',
+        owner: {
+          login: 'lionelgt',
+          url: 'https://api.github.com/users/lionelgt',
+        },
+      });
   });
 });

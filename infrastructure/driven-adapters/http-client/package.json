@@ -11,6 +11,10 @@
   "author": "Lionel gt",
   "license": "ISC",
   "dependencies": {
-    "@skeleton/domain": "^1.0.0"
+    "@nestjs/axios": "^3.0.2",
+    "@nestjs/common": "^10.3.3",
+    "@skeleton/domain": "^1.0.0",
+    "axios": "^1.6.7",
+    "zod": "^3.22.4"
   }
 }
